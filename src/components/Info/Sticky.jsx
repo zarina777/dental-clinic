@@ -13,7 +13,7 @@ const Sticky = ({ className }) => {
       <p className="text-sm md:hidden inline-block">
         Стоматология 24 часа - лечение и удаление...
       </p>
-      <a href="tel:998998555270">
+      <a href="tel:+998998555270">
         <Button
           className="bg-blue-600 capitalize text-[14px] text-white  p-3 px-5  rounded-[30px] flex items-center justify-center gap-3 hover:bg-blue-800 border-e-2  "
           type="button"

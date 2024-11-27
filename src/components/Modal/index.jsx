@@ -71,11 +71,11 @@ const Modal = () => {
       setStatus("Произошла ошибка при отправке сообщения. Попробуйте снова.");
     } finally {
       setSubmitting(false); // Reset submitting state
-
       // Reset status message after 5 seconds
       setTimeout(() => {
         setStatus(""); // Reset status message
-      }, 5000);
+        reset();
+      }, 3000);
     }
   }
 

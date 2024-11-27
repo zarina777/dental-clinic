@@ -14,7 +14,7 @@ const Navbar = () => {
       <ToastContainer
         className="z-[100] text-sm sm:text-base p-6 sm:p-0"
         position="bottom-right"
-        autoClose={5000}
+        autoClose={3000}
         closeOnClick
         pauseOnHover
       />

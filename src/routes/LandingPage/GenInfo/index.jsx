@@ -29,7 +29,7 @@ const GenInfo = () => {
           Позвоните нам сейчас.
         </p>
         <ul className="flex flex-col  pt-5 pb-0 w-[100%]">
-          <a className=" " href="tel:998998555270">
+          <a className=" " href="tel:+998998555270">
             <li className="flex pb-3 items-center gap-7 w-[100%]">
               <MdLocalPhone className="text-[28px] font-bold text-blue-600" />
               <div className="text-lg text-gray-700 w-[100%] border-b border-b-gray-400 py-3">
