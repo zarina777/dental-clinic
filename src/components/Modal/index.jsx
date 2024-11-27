@@ -4,8 +4,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import axios from "axios"; // Import axios for API calls
 import { ID, TOKEN } from "../../api_tokens"; // Assuming you have API tokens
 import { useModalStore } from "../../store/context"; // Modal store for opening/closing
-import { ToastContainer, toast } from "react-toastify"; // Toast notifications
-import "react-toastify/dist/ReactToastify.css"; // Import toast styles
+import { toast } from "react-toastify"; // Toast notifications
 
 const Modal = () => {
   const [status, setStatus] = useState(""); // To track status messages (success/failure)
@@ -49,24 +48,43 @@ const Modal = () => {
 
     setSubmitting(true); // Set submitting state to true
 
-    try {
-      const response = await axios.post(url, {
-        chat_id: ID,
-        text: message,
-      });
+    // try {
+    //   const response = await axios.post(url, {
+    //     chat_id: ID,
+    //     text: message,
+    //   });
 
-      if (response.data.ok) {
-        toast.success("Ваш запрос успешно отправлен");
-        closeModal();
-        reset(); // Reset form after successful submission
-      } else {
-        setStatus("Не удалось отправить сообщение");
-      }
-    } catch (err) {
-      setStatus("Произошла ошибка при отправке сообщения. Попробуйте снова.");
-    } finally {
-      setSubmitting(false); // Reset submitting state
-    }
+    //   if (response.data.ok) {
+    //     toast.success("Ваш запрос успешно отправлен", {
+    //       position: "bottom-right",
+    //       autoClose: 5000,
+    //       hideProgressBar: false,
+    //       closeOnClick: true,
+    //       pauseOnHover: true,
+    //     });
+    //     closeModal();
+    //     reset(); // Reset form after successful submission
+    //   } else {
+    //     setStatus("Не удалось отправить сообщение");
+    //   }
+    // } catch (err) {
+    //   setStatus("Произошла ошибка при отправке сообщения. Попробуйте снова.");
+    // } finally {
+    //   setSubmitting(false); // Reset submitting state
+
+    //   // Reset status message after 5 seconds
+    //   setTimeout(() => {
+    //     setStatus(""); // Reset status message
+    //   }, 5000);
+    // }
+    toast.success("Ваш запрос успешно отправлен", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+    });
+    closeModal();
   }
 
   return (
@@ -108,7 +126,7 @@ const Modal = () => {
                     id="name"
                     className="w-full p-2 border border-gray-300 rounded-md"
                     {...register("name_client", {
-                      required: "Это поле обязательно",
+                      // required: "Это поле обязательно",
                     })}
                   />
                   {isSubmitted && errors.name_client && (
@@ -131,7 +149,7 @@ const Modal = () => {
                     id="phone"
                     className="w-full p-2 border border-gray-300 rounded-md"
                     {...register("tel_number", {
-                      required: "Это поле обязательно",
+                      // required: "Это поле обязательно",
                     })}
                   />
                   {isSubmitted && errors.tel_number && (
@@ -153,7 +171,7 @@ const Modal = () => {
                     type="email"
                     id="email"
                     className="w-full p-2 border border-gray-300 rounded-md"
-                    {...register("email", { required: "Это поле обязательно" })}
+                    // {...register("email", { required: "Это поле обязательно" })}
                   />
                   {isSubmitted && errors.email && (
                     <p className="text-red-600 text-xs">
@@ -174,7 +192,7 @@ const Modal = () => {
                     id="message"
                     className="w-full p-1 border border-gray-300 rounded-md placeholder:text-sm"
                     {...register("message", {
-                      required: "Это поле обязательно",
+                      // required: "Это поле обязательно",
                     })}
                   ></textarea>
                   {isSubmitted && errors.message && (
@@ -203,7 +221,6 @@ const Modal = () => {
               </p>
             </div>
           </div>
-          <ToastContainer />
         </div>
       )}
     </>
