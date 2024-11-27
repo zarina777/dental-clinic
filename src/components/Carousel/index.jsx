@@ -35,9 +35,9 @@ const Carousel = () => {
   }, [slides.length, intervalTime]);
 
   return (
-    <div id="carousel" className="relative w-full">
+    <div id="carousel" className="relative w-full ">
       {/* Navigation Lines Above Carousel */}
-      <div className="absolute z-20 flex -translate-x-1/2 top-5 left-1/2 space-x-1">
+      <div className="absolute z-20 flex -translate-x-1/2 bottom-5 md:top-5 left-1/2 space-x-1">
         {slides.map((_, index) => (
           <div
             key={index}
@@ -57,7 +57,7 @@ const Carousel = () => {
       </div>
 
       {/* Slides */}
-      <div className="relative h-[70vh] overflow-hidden md:h-[70vh]">
+      <div className="relative   overflow-hidden h-[40vh] sm:h-[50vh] md:h-[70vh]">
         {slides.map((slide, index) => (
           <div
             key={index}

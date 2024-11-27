@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+/* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none; /* Disable scrollbar rendering */
+}
+
+/* Prevent overscroll indicators on mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE/Edge */
+  overscroll-behavior: contain;
+}

@@ -1,11 +1,19 @@
 import React from "react";
+import Comments from "./Comments";
 import GenInfo from "./GenInfo";
+import Location from "./Location";
+import Photographs from "./Photographs";
+import ServicePart from "./ServicePart";
 
 const Landing = () => {
   return (
-    <div className="m-[50px]">
+    <>
       <GenInfo />
-    </div>
+      <Location />
+      <Photographs />
+      <ServicePart />
+      <Comments />
+    </>
   );
 };
 

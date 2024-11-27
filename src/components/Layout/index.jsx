@@ -1,5 +1,7 @@
 import React from "react";
 import Landing from "../../routes/LandingPage";
+import Modal from "../Modal";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Layout = () => {
@@ -7,6 +9,9 @@ const Layout = () => {
     <>
       <Navbar />
       <Landing />
+      <Footer />
+      {/* Modal form */}
+      <Modal />
     </>
   );
 };
