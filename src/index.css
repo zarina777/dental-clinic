@@ -4,6 +4,29 @@
 html {
   scroll-behavior: smooth;
 }
+/* Custom scrollbar width */
+::-webkit-scrollbar {
+  width: 0.3rem; /* Vertical scrollbar width */
+  height: 0.1rem; /* Horizontal scrollbar height */
+}
+
+/* Custom scrollbar track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 10px;
+}
+
+/* Custom scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Gray color for the thumb */
+  border-radius: 10px;
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(64, 64, 64); /* Darker gray when hovered */
+}
+
 /* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
