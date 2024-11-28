@@ -12,19 +12,19 @@ const Location = () => {
           <FaLocationDot className="md:text-[20px]" />
           <span className="text-4">Местоположение</span>
         </Heading>
-        <div className="flex md:flex-row flex-col w-[100%] md:h-[400px] gap-5 md:gap-1 mb-3">
+        <div className="flex md:flex-row flex-col w-[100%] h-800px  md:h-[400px] gap-5 md:gap-1 mb-3">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d5997.295045602291!2d69.2045354!3d41.2730099!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d41.273057!2d69.202451!5e0!3m2!1sru!2s!4v1732605125810!5m2!1sru!2s"
             style={{ border: "0" }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="flex w-[100%] h-[50%] md:w-[50%] md:h-[100%]  aspect-video md:aspect-auto"
+            className="flex w-[100%] h-[40%] md:w-[50%] md:h-[100%]  aspect-video md:aspect-auto"
           ></iframe>
           <video
             controls
             src="./location.mp4"
-            className="flex w-[100%] h-[50%] md:w-[50%] md:h-[100%]  border border-blue-gray-100 aspect-video md:aspect-auto"
+            className="flex w-[100%] h-[60%] md:w-[50%] md:h-[100%]  border border-blue-gray-100 aspect-video md:aspect-auto"
           />
         </div>
         <div className="flex flex-col gap-4">
