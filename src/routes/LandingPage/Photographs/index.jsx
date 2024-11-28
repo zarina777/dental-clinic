@@ -35,21 +35,7 @@ const Photographs = () => {
           </div>
           <div>
             <img
-              src="./images/image3.jpg"
-              alt=""
-              className="w-full h-48 object-cover rounded-sm"
-            />
-          </div>
-          <div>
-            <img
               src="./images/image4.jpg"
-              alt=""
-              className="w-full h-48 object-cover rounded-sm"
-            />
-          </div>
-          <div>
-            <img
-              src="./images/image2.jpg"
               alt=""
               className="w-full h-48 object-cover rounded-sm"
             />
