@@ -28,7 +28,7 @@ const Location = () => {
           />
         </div>
         <div className="flex flex-col gap-4">
-          <p>Юнусобод тумани, 700002, Tashkent, Toshkent, Узбекистан</p>
+          <p>Tashkent, Узбекистан</p>
           <div className="flex sm:gap-4 gap-2">
             <a href="tel:998998555270">
               <Button

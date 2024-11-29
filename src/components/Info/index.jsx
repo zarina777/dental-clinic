@@ -53,13 +53,19 @@ const Info = () => {
               <MdVerifiedUser />
               <span className="text-sm">Подтверждено</span>
             </div>
-            <h1 className="text-[20px] mb-1 md:mb-2 leading-tight sm:leading-normal    font-medium">
+            <h1 className="text-xl leading-tight sm:leading-normal mb-2 sm:mb-0   font-medium">
               Стоматология 24/7 - лечение, отбеливание, чистка, протезирование и
               удаление зубов безболезненно
             </h1>
-
-            <ul className="flex gap-2 items-center content-center mb-4 flex-wrap md:flex-nowrap">
-              <li>Стоматологическая Клиника (Tashkent)</li>
+            <p className="mb-2 text-base">
+              Стоматология для всей семьи. Все виды стоматологических услуг. Мы
+              работаем круглосуточно, принмаем детей и взрослых. Лечение зубов у
+              нас абсолютно безболезненно.
+            </p>
+            <ul className="flex gap-2 items-center content-center mb-3 flex-wrap md:flex-nowrap">
+              <li className="text-gray-800 text-base">
+                Стоматологическая Клиника (Tashkent)
+              </li>
               <li>
                 <LuDot />
               </li>

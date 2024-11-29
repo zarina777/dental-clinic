@@ -4,6 +4,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 /* Custom scrollbar width */
 ::-webkit-scrollbar {
   width: 0.3rem; /* Vertical scrollbar width */
