@@ -4,9 +4,13 @@ const Carousel = () => {
   const [progress, setProgress] = useState(0); // Tracks progress for the active line
   const slides = [
     "images/image1.jpg",
-    "images/image2.jpg",
-    "images/image3.jpg",
+    // "images/image2.jpg",
+    // "images/image3.jpg",
     "images/image4.jpg",
+    // "images/location.jpg",
+    "images/image5.png",
+    "images/image6.jpg",
+    // "images/image7.jpg",
   ];
   const intervalTime = 8000; //for auto-slide
 
@@ -39,10 +43,7 @@ const Carousel = () => {
       {/* Navigation Lines Above Carousel */}
       <div className="absolute z-20 flex -translate-x-1/2 bottom-5 md:top-5 left-1/2 space-x-1">
         {slides.map((_, index) => (
-          <div
-            key={index}
-            className="relative w-14 h-1 rounded-md overflow-hidden bg-gray-500"
-          >
+          <div key={index} className="relative w-14 h-1 rounded-md overflow-hidden bg-gray-500">
             {currentSlide === index && (
               <div
                 className="absolute top-0 left-0 h-full bg-white"
@@ -65,11 +66,7 @@ const Carousel = () => {
               currentSlide === index ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
-            <img
-              src={slide}
-              className="absolute block w-full h-full object-cover"
-              alt={`Slide ${index + 1}`}
-            />
+            <img src={slide} className="absolute block w-full h-full object-cover" alt={`Slide ${index + 1}`} />
           </div>
         ))}
       </div>

@@ -14,7 +14,7 @@ const Location = () => {
         </Heading>
         <div className="flex md:flex-row flex-col w-[100%] h-800px  md:h-[400px] gap-5 md:gap-1 mb-3">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d5997.295045602291!2d69.2045354!3d41.2730099!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d41.273057!2d69.202451!5e0!3m2!1sru!2s!4v1732605125810!5m2!1sru!2s"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5994.684187727537!2d69.306026!3d41.301421!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE4JzA1LjEiTiA2OcKwMTgnMjEuNyJF!5e0!3m2!1sru!2s!4v1741274430850!5m2!1sru!2s"
             style={{ border: "0" }}
             allowFullScreen=""
             loading="lazy"
@@ -36,9 +36,7 @@ const Location = () => {
                 type="button"
               >
                 <MdLocalPhone className="text-lg" />
-                <span className="hidden md:inline-block">
-                  Позвонить: +998(99)855 52 70
-                </span>
+                <span className="hidden md:inline-block">Позвонить: +998(99)855 52 70</span>
                 <span className="inline-block md:hidden">Позвонить</span>
               </Button>
             </a>
