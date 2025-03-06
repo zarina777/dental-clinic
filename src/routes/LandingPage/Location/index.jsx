@@ -21,11 +21,7 @@ const Location = () => {
             referrerPolicy="no-referrer-when-downgrade"
             className="flex w-[100%] h-[40%] md:w-[50%] md:h-[100%]  aspect-video md:aspect-auto"
           ></iframe>
-          <video
-            controls
-            src="./location.mp4"
-            className="flex w-[100%] h-[60%] md:w-[50%] md:h-[100%]  border border-blue-gray-100 aspect-video md:aspect-auto"
-          />
+          
         </div>
         <div className="flex flex-col gap-4">
           <p>Tashkent, Узбекистан</p>
