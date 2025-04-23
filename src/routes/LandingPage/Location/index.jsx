@@ -12,16 +12,7 @@ const Location = () => {
           <FaLocationDot className="md:text-[20px]" />
           <span className="text-4">Местоположение</span>
         </Heading>
-        <div className="flex md:flex-row flex-col w-[100%] h-800px  md:h-[400px] gap-5 md:gap-1 mb-3">
-          <iframe
-            src="https://maps.app.goo.gl/ZHv2ZtbHLGW9GuU38"
-            style={{ border: "0" }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="flex w-[100%] h-[40%] md:w-[50%] md:h-[100%]  aspect-video md:aspect-auto"
-          ></iframe>
-          
+        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5994.635377077853!2d69.306275!3d41.301952!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE4JzA3LjAiTiA2OcKwMTgnMjIuNiJF!5e0!3m2!1sru!2s!4v1745404627688!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className="flex flex-col gap-4">
           <p>Tashkent, Узбекистан</p>
