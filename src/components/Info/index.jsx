@@ -114,7 +114,7 @@ const Info = () => {
               <div className="flex items-center gap-2 ">
                 <a
                   className="hidden md:inline-block"
-                  href="https://www.google.com/maps/dir//41.273057,69.202451/@41.2730099,69.2045354,16.37z?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/place/41%C2%B018'07.0%22N+69%C2%B018'22.6%22E/@41.301952,69.306275,16z/data=!4m4!3m3!8m2!3d41.301952!4d69.306275?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"
                 >
                   <Button
                     className="bg-transparent text-blue-600 capitalize text-[14px]   p-3 px-5  rounded-[30px] flex items-center justify-center gap-3 font-medium hover:text-blue-800 border-[2px] shadow-none hover:shadow-none hover:bg-[#f5fafd] active:border-blue-900 active:bg-blue-200 "
