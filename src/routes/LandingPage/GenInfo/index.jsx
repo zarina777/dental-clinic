@@ -48,7 +48,7 @@ const GenInfo = () => {
               </div>
             </li>
           </>
-          <a href="https://www.google.com/maps/dir//41.273057,69.202451/@41.2730099,69.2045354,16.37z?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D">
+          <a href="https://www.google.com/maps/place/41%C2%B018'07.0%22N+69%C2%B018'22.6%22E/@41.301952,69.306275,16z/data=!4m4!3m3!8m2!3d41.301952!4d69.306275?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D">
             <li className="flex pb-3 items-center gap-7 w-[100%]">
               <MdDirections className="text-[28px] font-bold text-blue-600" />
               <p className=" w-[100%] border-b text-lg text-gray-700 border-b-gray-400 py-3">
