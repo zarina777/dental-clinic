@@ -14,7 +14,7 @@ const Location = () => {
         </Heading>
         <div className="flex md:flex-row flex-col w-[100%] h-800px  md:h-[400px] gap-5 md:gap-1 mb-3">
           <iframe
-            src="https://www.google.com/maps/place/41%C2%B018'07.0%22N+69%C2%B018'22.6%22E/@41.301952,69.306275,16z/data=!4m4!3m3!8m2!3d41.301952!4d69.306275?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"
+            src="https://maps.app.goo.gl/ZHv2ZtbHLGW9GuU38"
             style={{ border: "0" }}
             allowFullScreen=""
             loading="lazy"
